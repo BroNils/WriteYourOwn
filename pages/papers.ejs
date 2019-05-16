@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+        <meta name="description" content="<%= webdata.metaDescription %>">
+        <meta name="author" content="<%= webdata.metaAuthor %>">
+        <title><%= webdata.title %></title>
+        <!-- Bootstrap core CSS -->
+        <link href="<%= pathAsset %>bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="<%= pathAsset %>assets/css/style.css" rel="stylesheet">
+        <link href="<%= pathAsset %>assets/css/jquery.scrollbar.css" rel="stylesheet">
+        <link href="<%= pathAsset %>assets/css/github-markdown.css" rel="stylesheet">
+        <!--<script src="assets/js/anime.js"></script>-->
+    </head>
+    <body class="body">
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light text-body "><%= webdata.appName %>
+            <br> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler58" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse ml-lg-4" id="navbarToggler58">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/">Home</a> 
+                    </li>                     
+                    <li class="nav-item"> 
+                        <a class="nav-link active" href="/Papers">Papers</a> 
+                    </li>                     
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/creator">Create Article</a> 
+                    </li>      
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/user">Dashboard</a> 
+                    </li>                  
+                </ul>
+                <div action="#" class="form-inline my-2 my-lg-0"> 
+                    <input name="sqP" class="form-control mr-sm-2 text-left font-italic border-dark" type="text" placeholder="Insert Query" aria-label="Search">                    
+                </div>
+            </div>
+        </nav>
+        <div class="badanskriptum d-flex flex-row justify-content-around align-items-end">
+            <div class="scrollbar-macosx listpaper flex-column" id="listpaper">
+				
+            </div>
+            <div class="trendpaper flex-column">
+                <div class="itemtrendpaper" id="trend1">
+                    <p class="trendjudul" name="ellipsisme"><a href="#1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</a></p>
+                    <p class="trendisi" name="ellipsisme">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Bibendum enim facilisis gravida neque convallis a cras semper</p>
+                </div>
+                <div class="itemtrendpaper" id="trend2">
+                    <p class="trendjudul" name="ellipsisme"><a href="#1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</a></p>
+                    <p class="trendisi" name="ellipsisme">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Bibendum enim facilisis gravida neque convallis a cras semper</p>
+                </div>
+                <div class="itemtrendpaper" id="trend3">
+                    <p class="trendjudul" name="ellipsisme"><a href="#1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</a></p>
+                    <p class="trendisi" name="ellipsisme">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Bibendum enim facilisis gravida neque convallis a cras semper</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="fixed-bottom mt-auto page-footer font-small blue pt-4 mt-5 bg-secondary">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <h5 class="text-uppercase text-white"><%= webdata.footer.title %></h5>
+                        <p class="text-white"><%= webdata.footer.desc %></p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase text-light">Links</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="<%= webdata.link[0].href %>" class="text-white"><%= webdata.link[0].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[1].href %>" class="text-white"><%= webdata.link[1].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[2].href %>" class="text-white"><%= webdata.link[2].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[3].href %>" class="text-white"><%= webdata.link[3].title %></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 bg-dark text-white">© 2018 Copyright&nbsp;
+                <a href="#" class="text-info">GoogleX</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        <script src="<%= pathAsset %>assets/js/jquery.min.js"></script>
+        <script src="<%= pathAsset %>bootstrap/js/bootstrap.min.js"></script>
+        <script src="<%= pathAsset %>assets/js/jquery.scrollbar.js"></script>
+        <% if(!isMobile){%>
+        <script src="<%= pathAsset %>assets/js/anime.js"></script>
+        <% } %>
+		<script>
+function recentLoad(){
+			searchRequest = $.get("/api/getRecentPaper", function(data, status){
+				if(data==null || data.length == 0){
+					$('#listpaper')[0].innerHTML += '<div class="itemlistpaper ml-auto mr-auto">\n\
+                    <p class="paperjudul" name="ellipsisme">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>\n\
+                    <p class="paperisi" name="ellipsisme">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Bibendum enim facilisis gravida neque convallis a cras semper</p>\n\
+                    <a href="#more" class="readmorepaper d-flex justify-content-end">Read more....</a>\n\
+                </div>';
+				}else{
+					data.forEach(function(datas){
+						$('#listpaper')[0].innerHTML += '<div class="itemlistpaper ml-auto mr-auto">\n\
+						<p class="paperjudul" name="ellipsisme">'+datas.title.replace(/<\/?[^>]+>/ig, "")+'</p>\n\
+						<p class="paperisi" name="ellipsisme">'+datas.content.replace(/<\/?[^>]+>/ig, "")+'</p>\n\
+						<a href="/read/'+datas._id+'" class="readmorepaper d-flex justify-content-end">Read more....</a>\n\
+					</div>';
+					});
+				}
+                ellipsizeTextBox("ellipsisme");
+				trendingLoad();
+                <% if(!isMobile){ %>
+				var xAnimate = anime({
+  autoplay: true,
+  targets: '.itemlistpaper',
+  translateX: ['-100%', 0],
+  opacity: [0, 1],
+  duration: 1000,
+  easing: 'easeOutExpo',
+  offset: 1000,
+  delay: function(el, i, l) {
+    return i * 1000;
+  },
+  complete: function(anim) {
+    if(anim.completed){refreshPaperScroll();ellipsizeTextBox("ellipsisme");}
+  }
+  });
+  <% }else{ %>
+  refreshPaperScroll();ellipsizeTextBox("ellipsisme");
+  <% } %>
+			});
+}
+			
+function trendingLoad(){
+			$.get("/api/getTrendingPaper", function(data, status){
+				let ixx = 1;
+				if(data==null || data.length == 0){return;}else{
+					data.forEach(function(datas){
+						$('#trend'+ixx)[0].innerHTML = '<p class="trendjudul" name="ellipsisme"><a href="/read/'+datas._id+'">'+datas.title.replace(/<\/?[^>]+>/ig, "")+'</a></p>\n\
+                    <p class="trendisi" name="ellipsisme">'+datas.content.replace(/<\/?[^>]+>/ig, "")+'</p>';
+						ixx++;
+					});
+					ellipsizeTextBox("ellipsisme");
+				}
+				ellipsizeTextBox("ellipsisme");
+			});
+		}
+recentLoad();</script>
+<script>
+var abortSearchLoop = false;
+var searchRequest = null;
+$('*[name=sqP]').on('keyup',function(){
+	//abortSearchLoop = true;
+	$('#listpaper')[0].innerHTML = '';
+	if($('*[name=sqP]')[0].value == ''){/*abortSearchLoop = true;*/startLimit = 6;refreshScroll = true;recentLoad();return null;}
+	refreshScroll = false;
+	if (searchRequest != null) {searchRequest.abort();}
+    searchRequest = $.get("/api/searchPapers?by=title&q="+$('*[name=sqP]')[0].value+"&limit=100", function(data,status){
+		if(data.length != 0 || data != null){
+			data.forEach(function(datas){
+				//if(abortSearchLoop){return false;}
+				$('#listpaper')[0].innerHTML += '<div class="itemlistpaper ml-auto mr-auto">\n\
+				<p class="paperjudul" name="ellipsisme">'+datas.title.replace(/<\/?[^>]+>/ig, "")+'</p>\n\
+				<p class="paperisi" name="ellipsisme">'+datas.content.replace(/<\/?[^>]+>/ig, "")+'</p>\n\
+				<a href="/read/'+datas._id+'" class="readmorepaper d-flex justify-content-end">Read more....</a>\n\
+				</div>';
+			});
+			ellipsizeTextBox("ellipsisme");
+		}
+	});
+});
+</script>
+		<script>
+		var startLimit = 6;
+		let goRefresh = true;
+		var refreshScroll = false;
+
+$('#listpaper').on('scroll',function() {
+	let trueDivHeight = $('#listpaper')[0].scrollHeight;
+	let divHeight = $('#listpaper').height();
+	let scrollLeftx = trueDivHeight - divHeight;
+   if($(this)[0].scrollTop == scrollLeftx && refreshScroll && goRefresh) {
+		startLimit++;
+		goRefresh == false;
+       $.get("/api/getRecentPaper?limit="+startLimit, function(data, status){
+				if(data.length == startLimit){
+						$('#listpaper')[0].innerHTML += '<div class="itemlistpaper ml-auto mr-auto">\n\
+						<p class="paperjudul" name="ellipsisme">'+data[data.length-1].title.replace(/<\/?[^>]+>/ig, "")+'</p>\n\
+						<p class="paperisi" name="ellipsisme">'+data[data.length-1].content.replace(/<\/?[^>]+>/ig, "")+'</p>\n\
+						<a href="/read/'+data[data.length-1]._id+'" class="readmorepaper d-flex justify-content-end">Read more....</a>\n\
+					</div>';
+				}
+				goRefresh == true;
+				ellipsizeTextBox("ellipsisme");
+			});
+   }
+});
+  
+function refreshPaperScroll(){
+refreshScroll = true;
+}
+</script>
+        <script>
+function ellipsizeTextBox(id) {
+	$.each($("*[name=ellipsisme]"),function(i,el){
+		var wordArray = el.innerHTML.split(' ');
+		if(wordArray.length == 1){
+			el.innerHTML = el.innerHTML.substr(0,60);
+			return;
+		}else{
+		while(el.scrollHeight > el.offsetHeight) {
+			wordArray.pop();
+			el.innerHTML = wordArray.join(' ') + '...';
+		 }
+		 }
+	});
+}
+ellipsizeTextBox('ellipsisme');
+</script>
+        <script>
+            jQuery(document).ready(function(){
+        jQuery('.scrollbar-macosx').scrollbar();
+    });</script>
+        <!-- <script>
+const Animation1 = anime({
+  autoplay: true,
+  targets: '.diveditor',
+  scale: [0, 1],
+  //opacity: [0, 1],
+  duration: 1600,
+  //easing: 'easeOutExpo',
+  offset: 1000,
+  delay: 100,
+  complete: function(anim) {
+    if(anim.completed){Animation3.restart();}
+  }});
+const Animation3 = anime({
+  autoplay: false,
+  targets: ['.submitcerita'],
+  scale: [0,1],
+  opacity: [0, 1],
+  duration: 1000,
+  offset: 1000,
+  delay: 1000});
+const Animation2 = anime({
+  autoplay: true,
+  targets: '#anime1',
+  translateY: ['-100%', 0],
+  opacity: [0, 1],
+  duration: 1000,
+  easing: 'easeOutExpo',
+  offset: 1000,
+  delay: 2000});
+</script>-->
+    </body>
+</html>

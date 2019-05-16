@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+        <meta name="description" content="<%= webdata.metaDescription %>">
+        <meta name="author" content="<%= webdata.metaAuthor %>">
+        <title><%= webdata.title %></title>
+        <!-- Bootstrap core CSS -->
+        <link href="<%= pathAsset %>bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="<%= pathAsset %>assets/css/style.css" rel="stylesheet">
+        <link href="<%= pathAsset %>assets/css/jquery.scrollbar.css" rel="stylesheet">
+        <link href="<%= pathAsset %>assets/css/github-markdown.css" rel="stylesheet">
+    </head>
+    <body class="body">
+        <div class="container">
+</div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light text-body "><%= webdata.appName %>
+            <br> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler58" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse ml-lg-4" id="navbarToggler58">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/">Home</a> 
+                    </li>                     
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/papers">Papers</a> 
+                    </li>           
+					<li class="nav-item"> 
+                        <a class="nav-link" href="/creator">Create Article</a> 
+                    </li>      
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/user">Dashboard</a> 
+                    </li>             
+                </ul>
+                <!--<form class="form-inline my-2 my-lg-0"> 
+                    <input class="form-control mr-sm-2 text-left font-italic border-dark" type="text" placeholder="Insert Query" aria-label="Search"> 
+                    <button class="btn my-2 my-sm-0 btn-light btn-outline-dark" type="submit">Search</button>                     
+                </form>-->
+            </div>
+        </nav>
+        <div class="row badan d-flex ml-sm-auto mr-sm-auto" style="margin-bottom: 250px;">
+            <div class="articlenya border-dark mt-lg-2 ml-md-auto ml-lg-auto ml-xl-auto ml-sm-auto mr-sm-auto">
+                <div class="pg-empty-placeholder" id="juduldiv" style="margin-bottom: 4px; max-width: 700px; max-height: 100px; border-bottom: 2px solid rgba(0, 0, 0, 0.1);">
+                    <div class="text-capitalize text-body judulnya"><%= paper.title %></div>
+				</div>
+                <div class="pg-empty-placeholder kontennya scrollbar-macosx">
+                    <article class="markdown-body">
+                        <%- paper.content %>
+                    <article>
+                </div>
+            </div>
+            <div class="card ml-md-auto ml-lg-auto ml-xl-auto">
+                <img alt="John" src="<%= paper.author.img.url %>" style="max-width: 250px; max-height: 150px; align-self: center; margin-bottom: 0.964em; margin-top: 1.000em; height: auto; width: auto; min-width: 150px; min-height: 70px;" data-html="false" data-placement="bottom" title="Hello :)">
+                <h1 class="kreatornama"><%= paper.author.displayName %></h1>
+                <p class="titlecard"><%= paper.author.desc %></p>
+                <p class="desccard"><%= paper.author.location %></p>
+                <div style="margin: 24px 0;">
+                    <a class="acard" href="#"><i class="fa fa-dribbble"></i></a> 
+                    <a class="acard" href="#"><i class="fa fa-twitter"></i></a> 
+                    <a class="acard" href="#"><i class="fa fa-linkedin"></i></a> 
+                    <a class="acard" href="#"><i class="fa fa-facebook"></i></a> 
+                </div>
+                <p><button class="buttoncard">@<%= paper.author.username %></button></p>
+            </div>
+            <div class="komentardiv ml-md-auto ml-lg-auto ml-xl-auto">
+                <div class="pg-empty-placeholder komentarnya markdown-body scrollbar-macosx">
+                </div>
+                <div class="form-group isikomen">
+                    <button class="btn gokomen btn-secondary btn-outline-light ml-auto float-right float-sm-right float-md-right float-lg-right float-xl-right" id="submit">>></button> 
+                    <label for="formInput183" class="marikomen">Mari berkomentar</label>                     
+                    <textarea class="form-control isikomen" id="formInput183" name="komen" rows="3"></textarea>                     
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="fixed-bottom page-footer font-small blue pt-4 mt-5 bg-secondary">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <h5 class="text-uppercase text-white"><%= webdata.footer.title %></h5>
+                        <p class="text-white"><%= webdata.footer.desc %></p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase text-light">Links</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="<%= webdata.link[0].href %>" class="text-white"><%= webdata.link[0].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[1].href %>" class="text-white"><%= webdata.link[1].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[2].href %>" class="text-white"><%= webdata.link[2].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[3].href %>" class="text-white"><%= webdata.link[3].title %></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 bg-dark text-white">© 2018 Copyright&nbsp;
+                <a href="#" class="text-info">GoogleX</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        <script src="<%= pathAsset %>assets/js/jquery.min.js"></script>
+        <script src="<%= pathAsset %>assets/js/popper.js"></script>
+        <script src="<%= pathAsset %>bootstrap/js/bootstrap.min.js"></script>
+        <script src="<%= pathAsset %>assets/js/jquery.scrollbar.js"></script>
+        <script>
+    $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+})
+</script>
+        <script>
+    $(function() {
+    $('[data-toggle="popover"]').popover();
+})
+</script>
+        <script>
+            jQuery(document).ready(function(){
+        jQuery('.scrollbar-macosx').scrollbar();
+		load_comment_all();
+    });</script>
+	<script>
+resize_to_fit();
+function resize_to_fit() {
+  let fontsize = $('div.judulnya').css('font-size');
+  $('div.judulnya').css('fontSize', parseFloat(fontsize) - 1);
+	
+	//console.log($('div.judulnya').height());
+	//console.log($('div.judulnya').css('font-size'));
+	if($('div.judulnya').height() == 0){return;}
+  if ($('div.judulnya').height() > $('div#juduldiv').height()) {
+    resize_to_fit();
+  }
+}
+</script>
+<script>
+$('#submit').on('click',function(){
+	var person = prompt("Please enter your name:", "Plato");
+  if (person == null || person == "") {} else {
+	$.post("/api/doComment",
+  {
+    id: "<%= paper._id %>",
+    comment: $("#formInput183")[0].value,
+	name: person
+  },
+  function(data, status){
+	if(status=="success"){
+        $("div.komentarnya.scroll-content")[0].innerHTML += "<blockquote><cite>- "+data.data.name.replace(/<\/?[^>]+>/ig, "")+"</cite><br>"+data.data.text.replace(/<\/?[^>]+>/ig, "")+"</blockquote>";
+	}
+  });
+  }
+});
+</script>
+<script>
+function load_comment_all(){
+	$.get("/api/getCommentByPaperId?id=<%= paper._id %>", function(data, status){
+		for(var i = 0, len = data.length; i<len; i++){
+			$("div.komentarnya.scroll-content")[0].innerHTML += "<blockquote><cite>- "+data[i].name.replace(/<\/?[^>]+>/ig, "")+"</cite><br>"+data[i].text.replace(/<\/?[^>]+>/ig, "")+"</blockquote>";
+		}
+	});
+}
+</script>
+    </body>
+</html>

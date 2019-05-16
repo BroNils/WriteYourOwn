@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+        <meta name="description" content="<%= webdata.metaDescription %>">
+        <meta name="author" content="<%= webdata.metaAuthor %>">
+        <title><%= webdata.title %></title>
+        <!-- Bootstrap core CSS -->
+        <link href="<%= pathAsset %>bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="<%= pathAsset %>assets/css/style.css" rel="stylesheet">
+        <!--<script src="assets/js/anime.js"></script>-->
+    </head>
+    <body class="body">
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-body sticky-top"><%= webdata.appName %>
+            <br> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler58" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse ml-lg-4" id="navbarToggler58">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/">Home</a> 
+                    </li>                     
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/papers">Papers</a> 
+                    </li>           
+					<li class="nav-item"> 
+                        <a class="nav-link" href="/creator">Create Article</a> 
+                    </li>      
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/user">Dashboard</a> 
+                    </li>             
+                </ul>
+                <!--<form class="form-inline my-2 my-lg-0"> 
+                    <input class="form-control mr-sm-2 text-left font-italic border-dark" type="text" placeholder="Insert Query" aria-label="Search"> 
+                    <button class="btn my-2 my-sm-0 btn-light btn-outline-dark" type="submit">Search</button>                     
+                </form>-->
+            </div>
+        </nav>
+        <div class="badanadmin d-flex flex-row flex-wrap justify-content-center">
+            <div class="mb-auto admindivcoll d-flex flex-column align-items-start">
+                <div class="line1" style="width: 100%; height: 15%; background-color: #939393; text-align: center; letter-spacing: 1px; font-size: 150%; color: #efeded;"><span class="letters">Administrator</span>
+</div>
+                <div class="input-group flex-nowrap pendisplay1" style="margin-left: 5%; margin-right: 5%; margin-top: 10%; width: 90%;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">></span>
+                    </div>
+                    <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping"/>
+                </div>
+                <div class="input-group mb-3 pendisplay1" style="margin-left: 5%; padding-right: 5%; margin-top: 6%; width: 95%;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">></span>
+                    </div>
+                    <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Password"/>
+                    <div class="input-group-append">
+</div>
+                </div>
+                <button class="btn btn-primary align-self-center" id="submit1" style="margin-top: 5%;">Submit</button>
+            </div>
+			<div class="mb-auto admindivcoll d-flex flex-column align-items-start animdisplay higherheight" style="display: none;">
+                <div class="line1" style="width: 100%; height: 15%; background-color: #939393; text-align: center; letter-spacing: 1px; font-size: 150%; color: #efeded;"><span>Web Config</span><br>[<a href="#" name="switchcfg1" style="color: #7ed6df;">1</a>] | [<a href="#" name="switchcfg2" style="color: #7ed6df;">2</a>]
+</div>
+			<!-- Config #1 -->
+				<div class="config1" style="width: 100%;">
+                <div class="input-group flex-nowrap pendisplay2" style="margin-left: 5%; margin-right: 5%; margin-top: 10%; width: 90%;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">></span>
+                    </div>
+                    <input id="title" type="text" class="form-control" placeholder="Website Title"/>
+                </div>
+                <div class="input-group flex-nowrap pendisplay2" style="margin-left: 5%; margin-right: 5%; margin-top: 1%; width: 90%;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">></span>
+                    </div>
+                    <input id="appName" type="text" class="form-control" placeholder="Your App Name"/>
+                </div>
+				<div class="input-group flex-nowrap pendisplay2" style="margin-left: 5%; margin-right: 5%; margin-top: 5%; width: 90%;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">></span>
+                    </div>
+                    <input id="footerTitle" type="text" class="form-control" placeholder="Footer title"/>
+                </div>
+				<div class="input-group flex-nowrap pendisplay2" style="margin-left: 5%; margin-right: 5%; margin-top: 1%; width: 90%;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="addon-wrapping">></span>
+                    </div>
+                    <input id="footerDesc" type="text" class="form-control" placeholder="Footer desc"/>
+                </div>
+				<div class="input-group flex-nowrap pendisplay2" style="margin-left: 5%; margin-right: 5%; margin-top: 5%; width: 90%;">
+                    <textarea class="form-control" id="formInput183" name="intro" rows="3" style="resize: none;" placeholder="Intro"></textarea> 
+                </div>
+				</div>
+			<!-- Config #2 -->
+				<div class="config2" style="width: 100%; display: none;">
+				<div class="input-group flex-nowrap pendisplay3" style="margin-left: 5%; margin-right: 5%; margin-top: 10%; width: 90%;">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="addon-wrapping">></span>
+					</div>
+					<input name="linkname" type="text" class="form-control" placeholder="Link Name"/>
+				</div>
+				<div class="input-group flex-nowrap pendisplay3" style="margin-left: 5%; margin-right: 5%; margin-top: 1%; width: 90%;">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="addon-wrapping">></span>
+					</div>
+					<input name="link" type="text" class="form-control" placeholder="Link URL"/>
+				</div>
+				<div class="input-group flex-nowrap pendisplay3" style="margin-left: 5%; margin-right: 5%; margin-top: 5%; width: 90%;">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="addon-wrapping">></span>
+					</div>
+					<input name="linkname" type="text" class="form-control" placeholder="Link Name"/>
+				</div>
+				<div class="input-group flex-nowrap pendisplay3" style="margin-left: 5%; margin-right: 5%; margin-top: 1%; width: 90%;">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="addon-wrapping">></span>
+					</div>
+					<input name="link" type="text" class="form-control" placeholder="Link URL"/>
+				</div>
+				<div class="input-group flex-nowrap pendisplay3" style="margin-left: 5%; margin-right: 5%; margin-top: 5%; width: 90%;">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="addon-wrapping">></span>
+					</div>
+					<input name="linkname" type="text" class="form-control" placeholder="Link Name"/>
+				</div>
+				<div class="input-group flex-nowrap pendisplay3" style="margin-left: 5%; margin-right: 5%; margin-top: 1%; width: 90%;">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="addon-wrapping">></span>
+					</div>
+					<input name="link" type="text" class="form-control" placeholder="Link URL"/>
+				</div>
+				<div class="input-group flex-nowrap pendisplay3" style="margin-left: 5%; margin-right: 5%; margin-top: 5%; width: 90%;">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="addon-wrapping">></span>
+					</div>
+					<input name="linkname" type="text" class="form-control" placeholder="Link Name"/>
+				</div>
+				<div class="input-group flex-nowrap pendisplay3" style="margin-left: 5%; margin-right: 5%; margin-top: 1%; width: 90%;">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="addon-wrapping">></span>
+					</div>
+					<input name="link" type="text" class="form-control" placeholder="Link URL"/>
+				</div>
+				</div>
+			<!-- end config div tab -->
+                <button class="btn btn-primary align-self-center" id="submit2" style="margin-top: 5%;">Submit</button>
+            </div>
+			<!--<div class="mb-auto linkproperti d-flex flex-wrap flex-row align-items-start animdisplay" style="display: none;">
+                <div class="line1" style="width: 100%; height: 15%; background-color: #939393; text-align: center; letter-spacing: 1px; font-size: 150%; color: #efeded;"><span>Links</span>
+</div>
+				<div style="margin-left: 5%; margin-right: 5%; margin-top: 2%; width: 30%;">
+					<div class="input-group flex-nowrap pendisplay3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="addon-wrapping">></span>
+						</div>
+						<input name="link" type="text" class="form-control" placeholder="Link"/>
+					</div>
+					<div class="input-group flex-nowrap pendisplay3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="addon-wrapping">></span>
+						</div>
+						<input name="link" type="text" class="form-control" placeholder="Link"/>
+					</div>
+					<div class="input-group flex-nowrap pendisplay3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="addon-wrapping">></span>
+						</div>
+						<input name="link" type="text" class="form-control" placeholder="Link"/>
+					</div>
+					<div class="input-group flex-nowrap pendisplay3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="addon-wrapping">></span>
+						</div>
+						<input name="link" type="text" class="form-control" placeholder="Link"/>
+					</div>
+				</div>
+				<div style="margin-left: 5%; margin-right: 5%; margin-top: 2%; width: 30%;">
+					<div class="input-group flex-nowrap pendisplay3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="addon-wrapping">></span>
+						</div>
+						<input name="link" type="text" class="form-control" placeholder="Link"/>
+					</div>
+					<div class="input-group flex-nowrap pendisplay3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="addon-wrapping">></span>
+						</div>
+						<input name="link" type="text" class="form-control" placeholder="Link"/>
+					</div>
+					<div class="input-group flex-nowrap pendisplay3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="addon-wrapping">></span>
+						</div>
+						<input name="link" type="text" class="form-control" placeholder="Link"/>
+					</div>
+					<div class="input-group flex-nowrap pendisplay3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="addon-wrapping">></span>
+						</div>
+						<input name="link" type="text" class="form-control" placeholder="Link"/>
+					</div>
+				</div>
+				<button class="btn btn-primary align-self-start" id="submit3" style="margin-left: 5%; margin-right: 5%; margin-top: 10%;">Submit</button>
+            </div>-->
+        </div>
+        <!-- Footer -->
+        <footer class="fixed-bottom mt-auto page-footer font-small blue pt-4 mt-5 bg-secondary">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <h5 class="text-uppercase text-white"><%= webdata.footer.title %></h5>
+                        <p class="text-white"><%= webdata.footer.desc %></p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase text-light">Links</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="<%= webdata.link[0].href %>" class="text-white"><%= webdata.link[0].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[1].href %>" class="text-white"><%= webdata.link[1].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[2].href %>" class="text-white"><%= webdata.link[2].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[3].href %>" class="text-white"><%= webdata.link[3].title %></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 bg-dark text-white">© 2018 Copyright&nbsp;
+                <a href="#" class="text-info">GoogleX</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        <script src="<%= pathAsset %>assets/js/jquery.min.js"></script>
+        <script src="<%= pathAsset %>assets/js/popper.js"></script>
+        <script src="<%= pathAsset %>bootstrap/js/bootstrap.min.js"></script>
+        <script src="<%= pathAsset %>assets/js/anime.js"></script>
+        <script src="<%= pathAsset %>assets/js/sha512.js"></script>
+        <script>
+$('.animdisplay').each(function(i, obj) {
+	$('.animdisplay')[i].attributes.class.value = "mb-auto flex-column align-items-start animdisplay";
+});
+const Animation1 = anime({
+  autoplay: true,
+  targets: '.admindivcoll',
+  //scale: [0, 1],
+  <% if(!isMobile){ %>
+  width: [0, '26%'],
+  <% }else{ %>
+  width: [0, '80%'],
+  <% } %>
+  //translateY: ['-100%', 0],
+  //opacity: [0, 1],
+  /*rotate: {
+    value: '+=2turn', // 0 * 2 = '2turn'
+    duration: 1800,
+    easing: 'easeInOutSine'
+  },
+  borderRadius: function() { return [anime.random(10, 80) + '%', 0]; },*/
+  duration: 1600,
+  easing: 'easeInOutExpo',
+  //offset: 1000,
+  delay: 100,
+  complete: function(anim) {
+    if(anim.completed){timelined.restart();}
+  }});
+$('.letters').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+const timelined = anime.timeline({autoplay: false}).add({
+    targets: '.line1',
+    //opacity: [0.5,1],
+    height: [0, '15%'],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.letter',
+    rotateX: [-90, 0],
+    duration: 1300,
+    delay: function(el, i) {
+      return 45 * i * 2;
+    }
+}).add({
+  targets: '.pendisplay1',
+  translateY: function(el, i){
+	return (Math.abs((i+1) % 2) == 1) ? (['100%',0]):(['-100%',0]);
+  },
+  opacity: [0, 1],
+  duration: 900,
+  easing: 'easeOutExpo',
+  delay: function(el, i) {
+      return 500 * i;
+}}).add({
+  targets: '#submit1',
+  scale: [0, 1],
+  //opacity: [0, 1],
+  duration: 900,
+  easing: 'easeOutExpo'
+});
+/*
+const Animation3 = anime({
+  autoplay: false,
+  targets: ['.submitcerita'],
+  scale: [0,1],
+  opacity: [0, 1],
+  duration: 1000,
+  offset: 1000,
+  delay: 1000});
+const Animation2 = anime({
+  autoplay: true,
+  targets: '#anime1',
+  translateY: ['-100%', 0],
+  opacity: [0, 1],
+  duration: 1000,
+  easing: 'easeOutExpo',
+  offset: 1000,
+  delay: 2000});*/
+</script>
+        <script>
+    $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+})
+</script>
+        <script>
+    $(function() {
+    $('[data-toggle="popover"]').popover();
+})
+</script>
+<script>
+var currCFG = 1;
+$('a[name=switchcfg1]').on('click', ()=>{
+	currCFG = 1;
+	$('.config1')[0].style.display = "";
+	$('.config2')[0].style.display = "none";
+	anime.timeline({autoplay: true}).add({
+	  targets: '.config1',
+	  scale: [0, 1],
+	  duration: 900,
+	  easing: 'easeOutExpo'
+	}).add({
+		targets: '.higherheight',
+		//opacity: [0.5,1],
+		height: <% if(!isMobile){%>[$('.higherheight')[0].style.height, '95%']<% }else{ %>[$('.higherheight')[0].style.height, '55%']<%}%>,
+		easing: "easeInOutExpo",
+		duration: 700
+	});
+});
+$('a[name=switchcfg2]').on('click', ()=>{
+	currCFG = 2;
+	$('.config1')[0].style.display = "none";
+	$('.config2')[0].style.display = "";
+	anime.timeline({autoplay: true}).add({
+	  targets: '.config2',
+	  scale: [0, 1],
+	  duration: 900,
+	  easing: 'easeOutExpo'
+	}).add({
+		targets: '.higherheight',
+		//opacity: [0.5,1],
+		height: <% if(!isMobile){%>[$('.higherheight')[0].style.height, '115%']<% }else{ %>[$('.higherheight')[0].style.height, '70%']<%}%>,
+		easing: "easeInOutExpo",
+		duration: 700
+	});
+	<% if(isMobile){ %>
+	$('.admindivcoll')[1].style["margin-top"] = '6%';
+	<%}%>
+});
+
+let linkdata = [];
+$('#submit2').on('click',()=>{
+	switch(currCFG){
+		case 1:
+			$.post("/api/updateWebConfig",{
+				"authKey": authKey.hex(),
+				title: $('#title')[0].value,
+				appName: $('#appName')[0].value,
+				footerTitle: $('#footerTitle')[0].value,
+				footerDesc: $('#footerDesc')[0].value,
+				intro: $('#formInput183')[0].value
+			},function(data, status){
+				if(data.status == 200){
+					alert("DONE");
+				}else{alert(data.msg);}
+			});
+		break;
+		case 2:
+			$('*[name=linkname]').each((i,obj)=>{
+				linkdata[i] = {title:obj.value,href:$('*[name=link]')[i].value};
+			});
+			
+			$.post("/api/updateWebConfig",{
+				"authKey": authKey.hex(),
+				link:JSON.stringify(linkdata)
+			},function(data, status){
+				if(data.status == 200){
+					alert("DONE");
+				}else{alert(data.msg);}
+			},"json");
+		break;
+		default:
+			
+	}
+})
+</script>
+        <script>
+let phaseAdmin = 0;
+let randomness = Math.floor(Math.random() * 10000000);
+let pKey = ">>VV<<^^";
+let authKey = sha512.hmac.create(pKey);
+authKey.update(randomness.toString());
+
+$('#submit1').on('click', ()=>{
+	switch(phaseAdmin){
+		case 0:
+			if($('#username')[0].value == ""){alert('Input your password'); break;}
+			if($('#password')[0].value == ""){alert('Input your password'); break;}
+			$.post("/api/doAdminLogin",
+			  {
+				username: $('#username')[0].value,
+				password: $('#password')[0].value,
+				"randomness": randomness,
+				publickey: pKey
+			  },
+			  function(data, status){
+				if(data.status == 200){
+					phaseAdmin = 1;
+					openUp();
+				}else{alert(data.msg);}
+			  });
+		break;
+		/*case 2:
+			if(simplemde.value() == null){alert('Please write any'); break;}
+			$.post("/api/doWrite",
+			  {
+				"authKey": authKey.hex(),
+				content: simplemde.value(),
+				title: $('#pentitle')[0].value
+			  },
+			  function(data, status){
+				if(data.status == 200){
+					$('#penid')[0].value = data.data._id;
+					openUp2();
+				}else{alert(data.msg);}
+			  });
+		break;*/
+		default:
+			
+	}
+});
+
+function openUp(){
+	$('.animdisplay').each(function(i, obj) {
+		$('.animdisplay')[i].style.display = "";
+	});
+	$('.animdisplay')[0].attributes.class.value = "mb-auto admindivcoll d-flex flex-column align-items-start animdisplay higherheight";
+	//$('.animdisplay')[1].attributes.class.value = "mb-auto linkproperti d-flex flex-wrap flex-row align-items-start justify-content-between animdisplay";
+	$('.badanadmin')[0].style.marginBottom = '10%';
+	<% if(isMobile){ %>
+	$('.higherheight')[0].style.width = '80%';
+	//$('.linkproperti')[0].style.width = '116%';
+	//$('.linkproperti')[0].style.height = '45%';
+	$('.admindivcoll')[0].style.height = '35%';
+	$('.badanadmin')[0].style["margin-bottom"] = '70%';
+	//$('#submit3')[0].style["margin-top"] = '1%';
+	//$('#submit3')[0].style["margin-left"] = '15%';
+	//alert(JSON.stringify($('.badanadmin')[0].style));
+	//margin-left: 5%; margin-right: 5%; margin-top: 10%
+	<% } %>
+	anime.timeline({autoplay: true}).add({
+	  //autoplay: true,
+	  targets: '.animdisplay',
+	  translateX: ['-100%',0],
+	  opacity: [0, 1],
+	  duration: 1300,
+	  easing: 'easeOutExpo',
+	  delay: function(el, i) {
+		  return 500 * i;
+	}}).add({
+		targets: '.higherheight',
+		//opacity: [0.5,1],
+		height: <% if(!isMobile){%>['55%', '95%']<% }else{ %>['35%', '55%']<%}%>,
+		easing: "easeInOutExpo",
+		duration: 700
+	}).add({
+	  targets: '#submit2',
+	  scale: [0, 1],
+	  //opacity: [0, 1],
+	  duration: 900,
+	  easing: 'easeOutExpo'
+	})<% if(isMobile){%>.add({
+		targets: '.badanadmin',
+		//opacity: [0.5,1],
+		height: ['500px', '800px'],
+		easing: "easeInOutExpo",
+		duration: 700
+	})<%}%>;
+	
+	$.get("/api/getWebConfig",function(data,status){
+		if(data==null){alert('Error WebConfig NULL');}
+		
+		$('#title')[0].value = data.title.replace(/<\/?[^>]+>/ig, "");
+		$('#appName')[0].value = data.appName.replace(/<\/?[^>]+>/ig, "");
+		$('#footerTitle')[0].value = data.footer.title.replace(/<\/?[^>]+>/ig, "");
+		$('#footerDesc')[0].value = data.footer.desc.replace(/<\/?[^>]+>/ig, "");
+		$('#formInput183')[0].value = data.intro.replace(/<\/?[^>]+>/ig, "");
+		
+		data.link.forEach(function(s,i,d){
+			$('*[name=linkname]')[i].value = data.link[i].title;
+			$('*[name=link]')[i].value = data.link[i].href;
+		});
+	});
+}
+
+function openUp2(){
+	
+}
+</script>
+    </body>
+</html>

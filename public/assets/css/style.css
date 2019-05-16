@@ -1,0 +1,882 @@
+@media (min-width: 1200px) {
+    .articlenya {
+        width: 656px;
+        height: 760px;
+        max-width: 700px;
+        max-height: 760px;
+
+        /* border: 5px dotted #000000 */
+        margin-bottom: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-top-style: solid;
+    }
+
+    .body {
+        overflow-x: hidden;
+    }
+
+    .footernya {
+        background-color: #343a40;
+        margin-top: 15px;
+        width: 100%;
+        color: #ffffff;
+        height: 100%;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 450px;
+        text-align: center;
+        font-family: arial;
+        width: 450px;
+        max-height: 400px;
+        height: 400px;
+        margin-top: 15px;
+    }
+
+    .titlecard {
+        color: grey;
+        word-break: break-word;
+        max-width: 448px;
+        max-height: 29px;
+    }
+
+    .buttoncard {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 0.286em;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        max-width: 448px;
+        max-height: 43px;
+        height: 43px;
+        word-break: break-word;
+        margin-bottom: auto;
+    }
+
+    .acard {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+
+    .buttoncard:hover,
+    .acard:hover {
+        opacity: 0.7;
+    }
+
+    .judulnya {
+        text-align: center;
+        direction: ltr;
+        word-break: break-word;
+
+        /*max-height: 100px;*/
+        max-width: 700px;
+        width: 656px;
+
+        /*height: 100px;*/
+        display: block;
+        overflow: hidden;
+        margin-top: 2px;
+        margin-bottom: 4px;
+        font-size: 35px;
+    }
+
+    .kontennya {
+        margin-top: -5px;
+        max-width: 700px;
+        height: 650px;
+        width: 656px;
+        text-align: justify;
+        word-break: break-word;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-left: auto;
+        padding-right: auto;
+        max-height: 650px;
+    }
+
+    .badan {
+        width: 1212px;
+        max-width: 1293px;
+        max-height: 789px;
+        height: 789px;
+        padding-top: 3.000em;
+    }
+
+    .kreatornama {
+        max-width: 448px;
+        max-height: 48px;
+        word-break: break-word;
+        text-transform: capitalize;
+    }
+
+    .desccard {
+        max-width: 448px;
+        max-height: 26px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .articlenya {
+        width: 525px;
+        height: 760px;
+        max-width: 525px;
+        max-height: 760px;
+
+        /* border: 5px dotted #000000 */
+        margin-bottom: -19px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-top-style: solid;
+    }
+
+    .body {
+        overflow-x: hidden;
+    }
+
+    .footernya {
+        background-color: #343a40;
+        margin-top: 15px;
+        width: 100%;
+        color: #ffffff;
+        height: 100%;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 450px;
+        font-family: arial;
+        width: 375px;
+        max-height: 330px;
+        height: 330px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .titlecard {
+        color: grey;
+        word-break: break-word;
+        max-width: 448px;
+        max-height: 29px;
+    }
+
+    .buttoncard {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 0.286em;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        max-width: 448px;
+        max-height: 43px;
+        height: 43px;
+        word-break: break-word;
+        margin-top: -27px;
+    }
+
+    .acard {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+
+    .buttoncard:hover,
+    .acard:hover {
+        opacity: 0.7;
+    }
+
+    .judulnya {
+        text-align: center;
+        direction: ltr;
+        word-break: break-word;
+
+        /*max-height: 100px;*/
+        max-width: 525px;
+        width: 525px;
+
+        /*height: 100px;*/
+        margin-top: 2px;
+        margin-bottom: 4px;
+        overflow: hidden;
+        font-size: 30px;
+    }
+
+    .kontennya {
+        margin-top: -5px;
+        max-width: 525px;
+        height: 650px;
+        width: 525px;
+        text-align: justify;
+        word-break: break-word;
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 650px;
+    }
+
+    .badan {
+        width: 969px;
+        max-width: 1293px;
+        max-height: 789px;
+        height: 789px;
+        padding-top: 3.000em;
+    }
+
+    .kreatornama {
+        max-width: 448px;
+        max-height: 48px;
+        word-break: break-word;
+        text-transform: capitalize;
+    }
+
+    .desccard {
+        max-width: 448px;
+        max-height: 26px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .articlenya {
+        width: 393px;
+        height: 655px;
+        max-width: 700px;
+        max-height: 760px;
+
+        /* border: 5px dotted #000000 */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-top-style: solid;
+        margin-top: 20px;
+    }
+
+    .body {
+        overflow-x: hidden;
+    }
+
+    .footernya {
+        background-color: #343a40;
+        margin-top: 15px;
+        width: 100%;
+        color: #ffffff;
+        height: 100%;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 450px;
+        text-align: center;
+        font-family: arial;
+        width: 281px;
+        max-height: 450px;
+        height: 353px;
+        margin-top: 20px;
+    }
+
+    .titlecard {
+        color: grey;
+        word-break: break-word;
+        max-width: 448px;
+        max-height: 29px;
+    }
+
+    .buttoncard {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        max-width: 448px;
+        max-height: 43px;
+        height: 37px;
+        word-break: break-word;
+    }
+
+    .acard {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+
+    .buttoncard:hover,
+    .acard:hover {
+        opacity: 0.7;
+    }
+
+    .judulnya {
+        text-align: center;
+        direction: ltr;
+        word-break: break-word;
+
+        /*max-height: 100px;*/
+        max-width: 700px;
+        width: 393px;
+
+        /*height: 100px;*/
+        margin-top: 2px;
+        margin-bottom: 4px;
+        overflow: hidden;
+        display: block;
+        font-size: 29px;
+    }
+
+    .kontennya {
+        margin-top: -5px;
+        max-width: 700px;
+        height: 546px;
+        width: 393px;
+        text-align: justify;
+        word-break: break-word;
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 660px;
+    }
+
+    .badan {
+        width: 727px;
+        max-width: 1293px;
+        max-height: 789px;
+        height: 690px;
+        padding-top: 40px;
+    }
+
+    .kreatornama {
+        max-width: 448px;
+        max-height: 48px;
+        word-break: break-word;
+        text-transform: capitalize;
+        font-size: 18px;
+    }
+
+    .desccard {
+        max-width: 448px;
+        max-height: 26px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 100px) {
+    .articlenya {
+        height: 655px;
+        /*max-width: 700px;*/
+        max-height: 760px;
+
+        /* border: 5px dotted #000000 */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-top-style: solid;
+        margin-top: 13px;
+        margin-left: 8%;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .body {
+        overflow-x: hidden;
+    }
+
+    .footernya {
+        background-color: #343a40;
+        margin-top: 15px;
+        width: 100%;
+        color: #ffffff;
+        height: 100%;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .card {
+        display: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 450px;
+        text-align: center;
+        font-family: arial;
+        width: 36.63003663003663vw;
+        margin: 15px auto auto;
+        max-height: 450px;
+        height: 64.8414985590778vh;
+    }
+
+    .titlecard {
+        color: grey;
+        font-size: 1.5vw;
+        word-break: break-word;
+        max-width: 448px;
+        max-height: 29px;
+    }
+
+    .buttoncard {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 0.286em;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        font-size: 2.5936599423631126vh;
+        width: 100%;
+        max-width: 448px;
+        max-height: 43px;
+        height: 6.195965417867435vh;
+        word-break: break-word;
+        margin-bottom: auto;
+    }
+
+    .acard {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+
+    .buttoncard:hover,
+    .acard:hover {
+        opacity: 0.7;
+    }
+
+    .judulnya {
+        text-align: center;
+        direction: ltr;
+        word-break: break-word;
+
+        /*max-height: 100px;*/
+        /*max-width: 700px;*/
+        /*width: 270px;*/
+
+        /*height: 14.409221902017292vh;*/
+        display: block;
+        overflow: hidden;
+        margin-top: 2px;
+        margin-bottom: 4px;
+        font-size: 20px;
+    }
+
+    .kontennya {
+        margin-top: -5px;
+        /*max-width: 700px;*/
+        height: 546px;
+        text-align: justify;
+        word-break: break-word;
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 660px;
+    }
+
+    .badan {
+        width: 100%;
+        /*max-width: 1293px;*/
+        max-height: 1100px;
+        height: 1100px;
+        padding-top: 45px;
+    }
+
+    .kreatornama {
+        max-width: 448px;
+        max-height: 48px;
+        font-size: 4vh;
+        word-break: break-word;
+        text-transform: capitalize;
+    }
+
+    .desccard {
+        max-width: 448px;
+        max-height: 26px;
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 100px) {
+    .intronya {
+        width: 1400px;
+        height: 540px;
+        margin-top: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-top-style: solid;
+        max-width: 1400px;
+        max-height: 550px;
+        margin-left: 53px;
+    }
+
+    .aboutjudul {
+        font-size: 6vh;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .intronya {
+        width: 1400px;
+        height: 350px;
+        max-height: 350px;
+        margin-top: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-top-style: solid;
+        max-width: 1400px;
+        margin-left: 41px;
+        margin-right: -29px;
+    }
+
+    .aboutjudul {
+        font-size: 6vh;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .intronya {
+        width: 1400px;
+        height: 350px;
+        max-height: 350px;
+        margin-top: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-top-style: solid;
+        max-width: 1400px;
+    }
+
+    .aboutjudul {
+        font-size: 6vh;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .markdown-body {
+        padding: 10px;
+    }
+}
+
+.markdown-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+.paragraf {
+    text-indent: 1em;
+}
+
+textarea[name=komen] {
+    resize: none;
+}
+
+@media (min-width: 1200px) {
+    .komentardiv {
+        width: 450px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 450px;
+        max-height: 320px;
+        height: 320px;
+        margin-top: -321px;
+    }
+
+    .komentarnya {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 150px;
+        height: 150px;
+        width: 419px;
+        max-width: 420px;
+        border-bottom-style: none;
+        margin-top: 2px;
+    }
+
+    .isikomen {
+        max-width: 426px;
+        max-height: 86px;
+        margin-left: 4px;
+    }
+
+    .marikomen {
+        margin-left: 3px;
+        margin-top: 12px;
+    }
+
+    .gokomen {
+        max-width: 60px;
+        max-height: 25px;
+        margin-top: 21px;
+        text-align: center;
+        line-height: 5px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .komentardiv {
+        width: 375px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 375px;
+        max-height: 300px;
+        height: 300px;
+        margin-top: -355px;
+    }
+
+    .komentarnya {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 100px;
+        height: 100px;
+        width: 335px;
+        max-width: 420px;
+        margin-top: 0.5em;
+        padding-right: 3em;
+        border-bottom-style: none;
+    }
+
+    .isikomen {
+        max-width: 351px;
+        max-height: 86px;
+        margin-left: 3px;
+    }
+
+    .marikomen {
+        margin-left: 3px;
+        margin-top: 31px;
+    }
+
+    .gokomen {
+        max-width: 40px;
+        max-height: 25px;
+        margin-top: 31px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .komentardiv {
+        width: 281px;
+        margin-top: -262.5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 450px;
+        max-height: 300px;
+        height: 250px;
+    }
+
+    .komentarnya {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 100px;
+        height: 100px;
+        width: 251px;
+        max-width: 450px;
+        margin-top: 2px;
+        border-bottom-style: none;
+    }
+
+    .isikomen {
+        max-width: 257px;
+        max-height: 86px;
+        margin-left: 3px;
+    }
+
+    .marikomen {
+        margin-top: 1em;
+        margin-left: 1em;
+        font-size: 10px;
+    }
+
+    .gokomen {
+        margin-top: 13px;
+        max-width: 40px;
+        max-height: 25px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 100px){
+    .komentardiv {
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /*max-width: 550px;*/
+        max-height: 320px;
+        height: 302px;
+        margin-left: 8%;
+        margin-right: auto;
+    }
+
+    .komentarnya {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 200px;
+        height: 150px;
+        width: 90%;
+        max-width: 90%;
+        margin-top: 2px;
+        border-bottom-style: none;
+    }
+
+    .isikomen {
+        margin-left: 3px;
+        max-width: 96%;
+        max-height: 86px;
+    }
+
+    .marikomen {
+        margin-left: 3px;
+        margin-top: 13px;
+    }
+
+    .gokomen {
+        max-width: 40px;
+        max-height: 25px;
+        font-size: 1vh;
+        margin-top: 24px;
+		margin-right: 5%;
+    }
+}
+
+
+.badanadmin {
+    width: 100%;
+    height: 500px;
+	margin-bottom: 2%;
+}
+
+.admindivcoll {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-top-style: solid;
+    width: 26%;
+    height: 55%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+
+.linkproperti {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-top-style: solid;
+    width: 62%;
+    height: 55%;
+    margin-top: 6%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media (max-width: 767px) and (min-width: 100px){
+    .diveditor {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-left: 3em;
+        margin-right: auto;
+    }
+
+    .submitcerita {
+        margin-left: 3em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+@media (min-width: 768px){
+    .diveditor {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .submitcerita {
+        margin: 1em auto;
+    }
+}
+
+.penname {
+}
+
+.badanskriptum {
+    width: 100%;
+    height: 800px;
+    max-height: 800px;
+}
+
+.listpaper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 68%;
+    height: 747px;
+    max-height: 747px;
+    box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.trendpaper {
+    width: 30%;
+    height: 747px;
+    max-height: 747px;
+    border-left-style: none;
+}
+
+.itemlistpaper {
+    width: 86%;
+    height: 230px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-height: 230px;
+}
+
+.itemtrendpaper {
+    width: 100%;
+    height: 200px;
+    max-height: 240px;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.trendjudul {
+    font-size: 20px;
+    text-indent: 20px;
+    text-transform: capitalize;
+    height: 60px;
+    max-width: 100%;
+    word-break: break-word;
+    max-height: 65px;
+}
+
+.trendisi {
+    max-height: 96px;
+}
+
+.paperjudul {
+    text-indent: 20px;
+    font-size: 25px;
+    text-transform: capitalize;
+    word-break: break-word;
+    max-width: 100%;
+    height: 74px;
+    max-height: 75px;
+}
+
+.paperisi {
+    height: 90px;
+    max-height: 110px;
+}
+
+.readmorepaper {
+}

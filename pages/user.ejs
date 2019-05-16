@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+        <meta name="description" content="<%= webdata.metaDescription %>">
+        <meta name="author" content="<%= webdata.metaAuthor %>">
+        <title><%= webdata.title %></title>
+        <!-- Bootstrap core CSS -->
+        <link href="<%= pathAsset %>bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="<%= pathAsset %>assets/css/style.css" rel="stylesheet">
+        <link href="<%= pathAsset %>assets/css/jquery.scrollbar.css" rel="stylesheet">
+        <!--<script src="assets/js/anime.js"></script>-->
+    </head>
+    <body class="body">
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light text-body "><%= webdata.appName %>
+            <br> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler58" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse ml-lg-4" id="navbarToggler58">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/">Home</a> 
+                    </li>                     
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/papers">Papers</a> 
+                    </li>                     
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="/creator">Create Article</a> 
+                    </li>     
+                    <li class="nav-item"> 
+                        <a class="nav-link active" href="/user">Dashboard</a> 
+                    </li>                  
+                </ul>
+                <!--<form class="form-inline my-2 my-lg-0"> 
+                    <input class="form-control mr-sm-2 text-left font-italic border-dark" type="text" placeholder="Insert Query" aria-label="Search"> 
+                    <button class="btn my-2 my-sm-0 btn-light btn-outline-dark" type="submit">Search</button>                     
+                </form>-->
+            </div>
+        </nav>
+        <div class="row d-flex badan m-lg-auto m-xl-auto align-items-center justify-content-center flex-column">
+            <div class="diveditor">
+                <div class="input-group penname" id="anime1"> 
+                    <div class="input-group-prepend"> 
+                        <div class="input-group-text">></div>                         
+                    </div>                     
+                    <input type="text" id="penname" class="form-control" placeholder="Pen Name"> 
+                </div>
+                <div class="input-group penpass" style="display: none"> 
+                    <div class="input-group-prepend"> 
+                        <div class="input-group-text">></div>                         
+                    </div>                     
+                    <input type="password" id="penpass" class="form-control" placeholder="Password"> 
+                </div>
+				<div class="input-group pendisplay" style="display: none"> 
+                    <div class="input-group-prepend"> 
+                        <div class="input-group-text">></div>                         
+                    </div>                     
+                    <input type="text" id="pendisplayname" class="form-control" placeholder="Displayname"> 
+                </div>
+				<div class="input-group pendisplay" style="display: none"> 
+                    <div class="input-group-prepend"> 
+                        <div class="input-group-text">></div>                         
+                    </div>                     
+                    <input type="text" id="penimgurl" class="form-control" placeholder="Image by URL"> 
+                </div>
+				<div class="input-group pendisplay" style="display: none"> 
+                    <div class="input-group-prepend"> 
+                        <div class="input-group-text">></div>                         
+                    </div>                     
+                    <input type="text" id="pendesc" class="form-control" placeholder="Description"> 
+                </div>
+				<div class="input-group pendisplay" style="display: none"> 
+                    <div class="input-group-prepend"> 
+                        <div class="input-group-text">></div>                         
+                    </div>                     
+                    <input type="text" id="penlocation" class="form-control" placeholder="Location"> 
+                </div>
+            </div>
+            <button class="btn btn-info btn-outline-light submitcerita" id="submit" type="button">Submit</button>
+        </div>
+        <!-- Footer -->
+        <footer class="fixed-bottom mt-auto page-footer font-small blue pt-4 mt-5 bg-secondary">
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <h5 class="text-uppercase text-white"><%= webdata.footer.title %></h5>
+                        <p class="text-white"><%= webdata.footer.desc %></p>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h5 class="text-uppercase text-light">Links</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="<%= webdata.link[0].href %>" class="text-white"><%= webdata.link[0].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[1].href %>" class="text-white"><%= webdata.link[1].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[2].href %>" class="text-white"><%= webdata.link[2].title %></a>
+                            </li>
+                            <li>
+                                <a href="<%= webdata.link[3].href %>" class="text-white"><%= webdata.link[3].title %></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 bg-dark text-white">© 2018 Copyright&nbsp;
+                <a href="#" class="text-info">GoogleX</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        <script src="<%= pathAsset %>assets/js/jquery.min.js"></script>
+        <script src="<%= pathAsset %>assets/js/popper.js"></script>
+        <script src="<%= pathAsset %>bootstrap/js/bootstrap.min.js"></script>
+        <script src="<%= pathAsset %>assets/js/jquery.scrollbar.js"></script>
+        <script src="<%= pathAsset %>assets/js/anime.js"></script>
+		<script src="<%= pathAsset %>assets/js/sha512.js"></script>
+        <script>
+const Animation1 = anime({
+  autoplay: true,
+  targets: '.diveditor',
+  scale: [0, 1],
+  //opacity: [0, 1],
+  duration: 1600,
+  //easing: 'easeOutExpo',
+  offset: 1000,
+  delay: 100,
+  complete: function(anim) {
+    if(anim.completed){Animation3.restart();}
+  }});
+const Animation3 = anime({
+  autoplay: false,
+  targets: ['.submitcerita'],
+  scale: [0,1],
+  opacity: [0, 1],
+  duration: 1000,
+  offset: 1000,
+  delay: 1000});
+const Animation2 = anime({
+  autoplay: true,
+  targets: '#anime1',
+  translateY: ['-100%', 0],
+  opacity: [0, 1],
+  duration: 1000,
+  easing: 'easeOutExpo',
+  offset: 1000,
+  delay: 2000});
+</script>
+        <script>
+    $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+})
+</script>
+        <script>
+    $(function() {
+    $('[data-toggle="popover"]').popover();
+})
+</script>
+        <script>
+
+let phaseCreate = 0;
+let passwTest = "X";
+let randomness = Math.floor(Math.random() * 10000000);
+let pKey = ">>VV<<^^";
+let authKey = sha512.hmac.create(pKey);
+let uData;
+const passAnimIn = anime({
+                  autoplay: false,
+				  targets: '.penpass',
+				  translateX: ['100%', 0],
+				  opacity: [0, 1],
+				  duration: 1000,
+				  easing: 'easeOutExpo',
+				  offset: 1000,
+				  delay: 800});
+authKey.update(randomness.toString());
+
+$('#submit').on('click', ()=>{
+	switch(phaseCreate){
+		case 0:
+			if($('#penname')[0].value == ""){alert('Input your pen name'); break;}
+			$.get("/api/getWriterByUsername?username="+$('#penname')[0].value, function(data, status){
+                if(data==null){(confirm('Writer not found, want to create new one ?')) ? ($('#penname')[0].readOnly = true, phaseCreate = 99, $('.penpass')[0].style.display = "", passAnimIn.restart()) : null; return;}
+				$('#penname')[0].readOnly = true;
+                $('.penpass')[0].style.display = "";
+                uData = data;
+                passAnimIn.restart();
+                phaseCreate = 1;
+			});
+		break;
+		case 1:
+			if($('#penpass')[0].value == ""){alert('Input your password'); break;}
+			$.post("/api/doLogin",
+			  {
+				username: $('#penname')[0].value,
+				password: $('#penpass')[0].value,
+				"randomness": randomness,
+				publickey: pKey
+			  },
+			  function(data, status){
+				if(data.status == 200){
+					anime({
+					  autoplay: true,
+					  targets: '.penpass',
+					  translateX: [0, '100%'],
+					  opacity: [1, 0],
+					  duration: 1000,
+					  easing: 'easeOutExpo',
+					  offset: 1000,
+					  delay: 800,
+					  complete: (anim)=>{
+						if(anim.completed){phaseCreate = 2;$('.penpass')[0].style.display = "none";openUp();}
+					  }});
+				}else{alert(data.msg);}
+			  });
+		break;
+		case 2:
+			//if(simplemde.value() == null){alert('Please write any'); break;}
+			$.post("/api/doChanges",
+			  {
+				"authKey": authKey.hex(),
+                "imgurl": $('#penimgurl')[0].value,
+                "displayname": $('#pendisplayname')[0].value,
+                "desc": $('#pendesc')[0].value,
+                "location": $('#penlocation')[0].value
+			  },
+			  function(data, status){
+				if(data.status == 200){
+					alert("Changed");
+					
+				}else{alert(data.msg);}
+			  });
+        break;
+        case 99:
+            if($('#penpass')[0].value == ""){alert('Input your password'); break;}
+            $.post("/api/doCreateUser",{
+                "username": $('#penname')[0].value,
+                "password": $('#penpass')[0].value
+            },function(data, status){
+				if(data.status == 200){
+                    alert("Success create, you can login now!");
+                    window.location = "/user";
+					
+				}else{alert(data.msg);}
+			});
+        break;
+		default:
+			
+	}
+});
+
+function openUp(){
+	$('.pendisplay').each(function(i, obj) {
+		$('.pendisplay')[i].style.display = "";
+    });
+    $('#pendisplayname')[0].value = uData.displayName;
+    $('#penimgurl')[0].value = uData.img.url;
+    $('#pendesc')[0].value = uData.desc;
+    $('#penlocation')[0].value = uData.location;
+	anime({
+		autoplay: true,
+		targets: '.pendisplay',
+		translateX: ['100%', 0],
+		opacity: [0, 1],
+		duration: 1000,
+		easing: 'easeOutExpo',
+		offset: 1000,
+		delay: function(el, i, l) {
+			return i * 900;
+		}
+	});
+}
+</script>
+        <script>
+            jQuery(document).ready(function(){
+        jQuery('.scrollbar-macosx').scrollbar();
+    });</script>
+    </body>
+</html>
