@@ -5,7 +5,7 @@ A Story Telling Web
 ----
 ## About
 
-WriteYourOwn is a story telling web with markdown feature for a better style of your papers. This project can be use to make a blog or something like that.
+WriteYourOwn is a story telling web with markdown feature for a better style of your papers. This project can be used to make a blog or something like that.
 
 ## Requirement
 
