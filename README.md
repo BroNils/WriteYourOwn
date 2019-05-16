@@ -11,7 +11,7 @@ WriteYourOwn is a story telling web with markdown feature for a better style of 
 
 This repo require a [NodeJS](https://nodejs.org/) >= 8.0.0.
 
-## Windows Installation
+## Installation
 
 First of all, you need to install [Git](https://git-scm.com/download/win) + [NodeJS](https://nodejs.org/) + [MongoDB Server](https://www.mongodb.com/download-center). Then open your git bash, and follow this:<br>
 ```sh
