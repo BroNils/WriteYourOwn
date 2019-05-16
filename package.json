@@ -1,0 +1,30 @@
+{
+  "name": "writeyourown",
+  "version": "1.0.0",
+  "description": "Just Try To Write",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "setup": "node ./src/setup.js"
+  },
+  "keywords": [
+    "WYO"
+  ],
+  "author": "GoogleX",
+  "license": "ISC",
+  "dependencies": {
+    "apicache": "^1.4.0",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "github-markdown-css": "^3.0.1",
+    "helmet": "^3.16.0",
+    "js-sha512": "^0.8.0",
+    "memory-cache": "^0.2.0",
+    "mongoose": "^5.5.3",
+    "mongoose-validator": "^2.1.0",
+    "showdown": "^1.9.0",
+    "showdown-xss-filter": "^0.2.0"
+  }
+}
