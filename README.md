@@ -1,5 +1,5 @@
 # WriteYourOwn
-[![NPM](https://img.shields.io/badge/npm-%3E=%205.5.0-blue.svg)](https://nodejs.org/) [![Node](https://img.shields.io/badge/node-%3E=%208.0.0-brightgreen.svg)](https://nodejs.org/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/GoogleX133/WriteYourOwn/blob/master/LICENSE) [![LINE](https://img.shields.io/badge/line-%207.18-brightgreen.svg)](http://line.me/) [![Version](https://img.shields.io/badge/release-1.0-brightgreen.svg)](https://github.com/GoogleX133/WriteYourOwn)<br><br>
+[![NPM](https://img.shields.io/badge/npm-%3E=%205.5.0-blue.svg)](https://nodejs.org/) [![Node](https://img.shields.io/badge/node-%3E=%208.0.0-brightgreen.svg)](https://nodejs.org/) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/GoogleX133/WriteYourOwn/blob/master/LICENSE) [![Version](https://img.shields.io/badge/release-1.0-brightgreen.svg)](https://github.com/GoogleX133/WriteYourOwn)<br><br>
 A Story Telling Web
 
 ----
